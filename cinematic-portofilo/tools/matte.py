@@ -422,7 +422,7 @@ def process(src, preset, out_w, out_h, outdir, name, trim=None, qa=None,
         "-r", str(fps), "-i", "-",
         "-an", "-c:v", "libx264", "-preset", "slow", "-crf", str(crf),
         "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.1",
-        "-color_range", "pc", "-movflags", "+faststart", mp4,
+        "-color_range", "tv", "-movflags", "+faststart", mp4,
         "-an", "-c:v", "libvpx-vp9", "-crf", "26", "-b:v", "0",
         "-row-mt", "1", "-cpu-used", "3", "-pix_fmt", "yuv420p", webm,
     ]
