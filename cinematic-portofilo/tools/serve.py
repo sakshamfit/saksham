@@ -75,6 +75,6 @@ class Server(socketserver.ThreadingTCPServer):
 
 
 if __name__ == "__main__":
-    with Server(("127.0.0.1", PORT), Handler) as httpd:
-        print("serving on http://127.0.0.1:%d" % PORT, flush=True)
+    with Server(("0.0.0.0", PORT), Handler) as httpd:
+        print("serving on http://0.0.0.0:%d" % PORT, flush=True)
         httpd.serve_forever()
