@@ -32,6 +32,22 @@ Review helpers (dev only):
 - `window.__tune('wear', 0.5)` live-adjusts letter distressing
   (`wear`, `wearGain`, `wearScale`).
 
+## Deploying on Vercel
+
+The site lives in this subdirectory, not at the repo root, so the repo-root
+`vercel.json` rewrites every request into `cinematic-portofilo/`. Nothing else
+is needed — there is no build step, no framework, no environment variables.
+(Alternatively, set the project's **Root Directory** to `cinematic-portofilo`
+in Vercel → Project → Settings → General; the rewrites are then ignored and
+harmless.)
+
+If the deployed URL redirects to **"Protected Deployment — Log in to Vercel"**
+instead of showing the site, that is Vercel's *Deployment Protection*, not a
+build failure. Turn it off under Vercel → Project → Settings → **Deployment
+Protection** → *Vercel Authentication* → **Disabled** (or "Only Preview
+Deployments"). Protection only guards `*.vercel.app` URLs; a custom domain is
+never gated by it.
+
 ## How the transparent video works (the part people ask about)
 
 The original footage is a person on a white studio backdrop. The white is

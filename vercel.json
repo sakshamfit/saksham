@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/", "destination": "/cinematic-portofilo/index.html" },
+    { "source": "/((?!cinematic-portofilo/).*)", "destination": "/cinematic-portofilo/$1" }
+  ]
+}
