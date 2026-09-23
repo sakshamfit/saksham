@@ -1,0 +1,17 @@
+{
+  "name": "anshuman-viralbuzz-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfolio for Anshuman — Business Consultant, Brand Strategist, Founder of Viral Buzz Media (Gorakhpur, India).",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js && node scripts/dev.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "libphonenumber-js": "1.13.13"
+  }
+}
